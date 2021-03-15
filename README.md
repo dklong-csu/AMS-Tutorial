@@ -71,7 +71,7 @@ You can get the full details of any git command by running `man git-$commandname
 	* A workflow is essentially a series of commands you give to a blank computer. You can download software packages, run code, or whatever else you may need to make sure your code is functioning properly.
 	* You can also protect your primary branch (typically called the `master` branch) by modifying settings within GitHub. On GitHub, click on _Settings_ then _Branches_ within a repository. You can set which branch is considered the base (think of this as the latest "release" of a program). Then you can add rules to various branches. For example, you can make it so that you cannot `commit` directly to your `master` branch and you must pass all checks (the _Actions_ described above) before being allowed to merge your changes in `master`.
 * **Testing code:**
-	* These are often called _regression tests_ because you are checking whether your code maintains functionality. If you fail a test the you have _regressed_ in functionality.
+	* These are often called _regression tests_ because you are checking whether your code maintains functionality. If you fail a test then you have _regressed_ in functionality.
 	* The specifics of how to test your code will vary language-to-language, but here are some places to start:
 		* Python: https://docs.python-guide.org/writing/tests/
 		* Matlab: https://www.mathworks.com/help/matlab/matlab-unit-test-framework.html
