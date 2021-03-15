@@ -56,7 +56,7 @@ You can get the full details of any git command by running `man git-$commandname
 * After editing and fixing it and committing those changes, I can run `git pull` again, to make sure no other changes happened, and then finally push my version.
 * Now if everyone runs `git pull` they should get a clean, up-to-date version of the repository.
 
-### What to do next.
+## What to do next.
 * The best way to become comfortable with git is to simply practice the basic techniques presented above on actual projects you have.
 * If you find yourself on a project with a large contributor base or complicated code, then you might find yourself needing a few extra practices to maintain your codebase smoothly.
 
