@@ -55,3 +55,17 @@ You can get the full details of any git command by running `man git-$commandname
 * Instead, I should run `git pull`. This will also give a warning, but it will show me the conflict and allow me to make an edit.
 * After editing and fixing it and committing those changes, I can run `git pull` again, to make sure no other changes happened, and then finally push my version.
 * Now if everyone runs `git pull` they should get a clean, up-to-date version of the repository.
+
+### What to do next.
+* The best way to become comfortable with git is to simply practice the basic techniques presented above on actual projects you have.
+* If you find yourself on a project with a large contributor base, then you might find yourself needing a few extra practices to maintain your codebase smoothly.
+
+### Continuous integration.
+* This is a philosophy regarding how to work on a shared software project. GitHub has a nice, brief description of this practice: https://docs.github.com/en/actions/guides/about-continuous-integration
+* The idea is to make frequent, small updates when possible and to have a way to test your entire codebase to make sure your updates don't break anything!
+* **How to set this up in GitHub:** Navigate to one of your repositories on GitHub.
+* Select the _Actions_ tab to manage what steps GitHub will take whenever you submit a Pull Request.
+* If you don't have any _workflows_ already set up, then you will see some templates for how to get started. Or you can look through all of the language-specific templates at https://github.com/actions/starter-workflows/tree/main/ci
+* You can use _workflows_ to test various aspects of your code every time a change occurs. **More tests are always better!**
+* A workflow is essentially a series of commands you give to a blank computer. You can download software packages, run code, or whatever else you may need to make sure your code is functioning properly.
+* You can also protect your primary branch (typically called the `master` branch) by modifying settings within GitHub. On GitHub, click on _Settings_ then _Branches_ within a repository. You can set which branch is considered the base (think of this as the latest "release" of a program). Then you can add rules to various branches. For example, you can make it so that you cannot `commit` directly to your `master` branch and you must pass all checks (the _Actions_ described above) before being allowed to merge your changes in `master`.
