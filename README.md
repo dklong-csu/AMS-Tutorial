@@ -63,7 +63,8 @@ You can get the full details of any git command by running `man git-$commandname
 ### Continuous integration.
 * This is a philosophy regarding how to work on a shared software project. GitHub has a nice, brief description of this practice: https://docs.github.com/en/actions/guides/about-continuous-integration
 * The idea is to make frequent, small updates when possible and to have a way to test your entire codebase to make sure your updates don't break anything!
-* **How to set this up in GitHub:** Navigate to one of your repositories on GitHub.
+* **How to set this up in GitHub:** 
+	* Navigate to one of your repositories on GitHub.
 	* Select the _Actions_ tab to manage what steps GitHub will take whenever you submit a Pull Request.
 	* If you don't have any _workflows_ already set up, then you will see some templates for how to get started. Or you can look through all of the language-specific templates at https://github.com/actions/starter-workflows/tree/main/ci
 	* You can use _workflows_ to test various aspects of your code every time a change occurs. **More tests are always better!**
